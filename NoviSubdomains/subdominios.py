@@ -13,7 +13,7 @@ parser = parser.parse_args()
 def main():
     if parser.target:
         if path.exists('Subdominios.txt'):
-            wordlist = ('Subdominios.topen(xt', 'r')
+            wordlist = open('Subdominios.txt', 'r')
             wordlist = wordlist.read().split('\n')
 
             print("Buscando Subdominios... @novinho.xit")
@@ -44,4 +44,5 @@ if __name__ == '__main__':
     try:
         main()
     except KeyboardInterrupt:
+
         sys.exit()
